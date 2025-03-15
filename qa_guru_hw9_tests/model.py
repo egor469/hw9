@@ -25,7 +25,7 @@ class RegistrationPage:
     def fill_date_of_bithday(self, month, year, date):
         browser.element("#dateOfBirthInput").click()
         browser.element('.react-datepicker__month-select').click().element(f'["value={month}"]').click()
-        browser.element('.react-datepicker__year-select').click().element(f'["value={year}"]).click()
+        browser.element('.react-datepicker__year-select').click().element(f'["value={year}"]').click()
         browser.element(f'.react-datepicker__day--0{date}').click()
 
     def choose_subject(self, subject):
